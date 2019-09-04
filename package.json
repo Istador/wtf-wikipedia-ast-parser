@@ -1,0 +1,30 @@
+{
+  "name": "wtf-wikipedia-ast-parser",
+  "version": "0.0.1",
+  "description": "a parser of wikipedia sentences using an AST. An example for wtf_wikipedia",
+  "main": "parser.js",
+  "scripts": {
+    "test": "tape ./tests.js | tap-dancer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Istador/wtf-wikipedia-ast-parser.git"
+  },
+  "author": "Robin C. Ladiges",
+  "license": "MPL-2.0",
+  "licenses": [
+    {
+      "type": "MPL-2.0",
+      "url": "https://github.com/Istador/wtf-wikipedia-ast-parser/raw/master/LICENSE.md"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Istador/wtf-wikipedia-ast-parser/issues"
+  },
+  "homepage": "https://github.com/Istador/wtf-wikipedia-ast-parser",
+  "devDependencies": {
+    "lodash.isequal": "^4.5.0",
+    "tap-dancer": "^0.2.0",
+    "tape": "^4.11.0"
+  }
+}
