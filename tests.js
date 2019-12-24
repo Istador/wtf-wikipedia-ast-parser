@@ -2,7 +2,6 @@
 
 const test = require('tape')
 
-const isEqual = require('lodash.isequal')
 const util    = require('util')
 const { compile, parse, optimize } = require('./parser')
 const { t, s, i, b, a }  = require('./classes')
@@ -523,8 +522,7 @@ for (const context in tests) {
       const _name = (err) => `[${index}] ${context} - ${name} - ${err}`
 
       if (ast !== undefined) {
-        //t.deepEqual(_ast, ast, _name('ast mismatch')) // deepEqual is not working correctly with classes
-        t.equal(isEqual(_ast, ast), true, _name('ast mismatch'))
+        t.deepEqual(_ast, ast, _name('ast mismatch'))
       }
 
       if (text !== undefined) {
